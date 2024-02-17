@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        min-height: 500px;
+        border: 1px solid red;
+        background-color: rgb(151, 202, 151);
+    }
+    .container img{
+        width: 700px;
+        height: 180px;
+        border: 0px solid;
+        background-color: rgb(96, 180, 96);
+        margin: 20px 25%;
+        border-radius: 6px; 
+    }
+    .container-1{
+        width: 700px;
+        height: 170px;
+        background-color: aliceblue;
+        margin: 10px 25%;
+        border-radius: 6px; 
+    }
+    .container-1 p{
+        padding: 20px;
+        font-size: xx-large;
+        color: black;
+        border-bottom: 1.5px solid green;
+    }
+    .container-1 input{
+        margin: 30px 0 0 20px;
+        height: 30px;
+        border: none;
+        border-bottom: 1.5px dotted rgb(211, 187, 187);
+    }
+
+</style>
+<body>
+    <div class="container">
+        <form>
+            <img>
+            <div class="container-1">
+                <p>Contact information</p>
+                <input type="text" id="name" name="fname">
+            </div>
+            <div class="container-2">
+                <label>Name</label>
+                <input type="text" id="name" name="fname">
+            </div>
+            <div class="container-3">
+                <label>Email:</label>
+                <input type="text" id="email" name="fname">
+            </div>
+            <div class="container-3">
+                <label>Address:</label>
+                <input type="text" id="name" name="fname">
+            </div>
+            <div class="container-4">
+                <label>Phone Number:</label>
+                <input type="text" id="name" name="fname">
+            </div>
+            <div class="container-5">
+               <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

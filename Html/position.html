@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .parent{
+        width: 100%;
+        height: 500px;
+        border: 1px solid red;
+        position: relative;
+    }
+    .nav-bar{
+        width: 100%;
+        height: 50px;
+        border: 1px solid coral;
+    }
+    .child-1{
+        width: 50%;
+        min-height: 250px;
+        border: 1px solid black;
+        position: absolute;
+        top: 50px;
+    }
+    .child-2{
+        width: 50%;
+        min-height: 250px;
+        border: 1px solid yellow;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+    }
+    footer{
+        border: 1px solid coral;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+    }
+</style>
+<body>
+    <div class="parent">
+        <nav class="nav-bar"> This is nav bar</nav>
+        <section>
+            <div class="child-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae 
+                    laborum aspernatur quos, repellat labore rerum sunt praesentium autem repellendus.
+                     Ullam inventore ab ipsa incidunt pariatur at dolores tempora sint
+                     doloribus facere esse non mollitia corrupti, itaque voluptas sapiente ut modi!
+                    </p>
+                    <img src="" width="50px" height="50px">
+            </div>
+            <div class="child-2">Lorem ipsum dolor sit, amet consectetur 
+                adipisicing elit. Delectus consequatur tenetur non esse dolor praesentium aliquid ratione fugiat iure rerum 
+                asperiores eveniet consectetur totam eum, natus quae a minima assumenda.
+            </div>
+        </section>
+        <footer>
+            <div class="child-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ratione, illo. Quo velit quis consequatur mollitia error, officiis nostrum minus temporibus 
+                doloribus soluta, odit nemo accusamus? Cum dolorem mollitia adipisci doloremque.</div>
+        </footer>
+    </div>
+</body>
+</html>
