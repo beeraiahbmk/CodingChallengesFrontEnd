@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+        box-sizing: border-box;
+    }
+    .nav-list{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 70px;
+        justify-content: flex-end;
+        align-items: center;
+        background: linear-gradient(135deg,#00feba,#5b548a)
+    }
+    .nav-list> *{
+        flex-shrink: 1;
+        /* flex-grow: 1; */
+        /* border: 1px solid seagreen; */
+    }
+    /* .nav-list :nth-child(1){ */
+        /* align-self: flex-start; */
+    /* } */
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(135deg,#00feba,#5b548a);
+    }
+    .foot-list{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 70px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+</style>
+<body>
+    <nav>
+        <div class="nav-list">
+            <!-- <li>Logo</li> -->
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>contact</a></li>
+            <li><a>linked in</a></li>
+        </div>
+    </nav>
+    <footer>
+        <div class="foot-list">
+            <li><a>instagram</a></li>
+            <li><a>linkedin</a></li>
+            <li><a>twitter</a></li>
+        </div>
+    </footer>
+</body>
+</html>
