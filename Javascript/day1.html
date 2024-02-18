@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Some small addition answer</p>
+    <p id="ans"></p>
+    <p>Displays all cars details:</p>
+    <p id="cars"></p>
+    <p>Displaying all bikes:</p>
+    <p id="bikes"></p>
+    <script>
+        let x=10;
+        let y=20;
+        let z=x+y;
+        document.getElementById("ans").innerHTML="the ans is:"+z;
+        const cars=["volvo","bmw","porch","oodi"]
+        let text="";
+        for(let i=0;i<cars.length;i++){
+            text+=cars[i]+"<br>"
+        }
+        document.getElementById("cars").innerHTML="Displaying all cars:"+text;
+        const bikes=["honda","r15","gtr","duke","himalya"]
+        let j=0;
+        let text1="";
+        while(j<bikes.length){
+            text1+bikes[j]+"<br>"
+        }
+        document.getElementById("bikes").innerHTML="The bikes are"+text1;
+    </script>
+</body>
+</html>
