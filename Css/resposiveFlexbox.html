@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive flex box</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #222;
+        /* font-family: 'poppins',sans-serif; */
+    }
+    header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    header p{
+        padding-left: 50px;
+        color: whitesmoke;
+        font-size: 30px;
+        /* font-weight: 200px; */
+    }
+    .nav-list{
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        gap: 2.5rem;
+    }
+    .nav-list li{
+        flex: 1;
+    }
+    .nav-list li a{
+        color: whitesmoke;
+    }
+    .section-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid red; */
+        margin-top: 60px;
+    }
+    .section-list h1{
+        font-weight: 1000;
+        font-size: xx-large;
+        color: aliceblue;
+    }
+    .section-list p{
+        color: aliceblue;
+        font-size: x-large;
+        font-weight: 800;
+    }
+    .section-list button{
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        background: rgb(186, 13, 239);
+        color: aliceblue;
+        padding: 12px 18px;
+        border: none;
+    }
+</style>
+<body>
+    <header>
+        <p><a>Renovex</a></p>
+        <nav>
+            <div class="nav-list">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/home">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="iiii">Contact</a></li>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="section-list">
+            <h1>CREATIVE AGENCY</h1>
+            <p>Welcome To website</p>
+            <button>CONTACT US</button>
+        </div>
+    </section>
+</body>
+</html>
