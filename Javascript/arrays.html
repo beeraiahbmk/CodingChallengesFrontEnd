@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lets display the array of cars</h1>
+    <button onclick="displayCars()">Click</button>
+    <p id="cars"></p>
+  
+    <script>
+        const cars=["gtr","porche","lamborgini"]
+        let text="<ul>";
+       function displayCars(){
+        for(let i=0;i<cars.length;i++){
+            text+="<li>"+cars[i]+"</li>"+"<br>";
+        }
+        // console.log("im out");
+        document.getElementById("cars").innerHTML=text+="</ul>";
+       }
+       //Importnat methods
+       //adding
+       cars.push("volvo");
+       //for sorting
+       cars.sort();
+       //for reverse
+       cars.reverse();
+       //deleteing
+       cars.pop();
+    </script>
+</body>
+</html>
