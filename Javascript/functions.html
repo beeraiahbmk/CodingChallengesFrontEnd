@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>what is my name?</h1>
+    <button onclick="myName()">Click</button>
+    <p id="name"></p>
+    <h1>My birth day?</h1>
+    <button onclick="myBirthdaydays()">Click</button>
+    <p id="bday"></p>
+    <h1>Fav cricketer?</h1>
+    <button onclick="favCricketer()">Click</button>
+    <p id="cricketer"></p>
+    <h1>Fav language?</h1>
+    <button onclick="favLanguage()">Click</button>
+    <p id="language"></p>
+    <h1>Return sommething?</h1>
+    <p id="return"></p>
+    <script>
+        const date1=new Date('7/27/2000');
+        const Name="beeraiah bmk";
+        const Cricketer="virat kohli";
+        const Language="javaaa";
+        function myBirthdaydays(){
+            document.getElementById("bday").innerHTML=date1;
+            console.log("----1");
+        }
+        function myName(){
+            document.getElementById("name").innerHTML=Name;
+            console.log("----1")
+        }
+        function favCricketer(){
+            document.getElementById("cricketer").innerHTML=Cricketer;
+            console.log("----1")
+        }
+        function favLanguage(){
+            document.getElementById("language").innerHTML=Language;
+            console.log("----1")
+        }
+        function returnSomething(a,b){
+            return a+b;
+        }
+        let res=returnSomething(10,10);
+        document.getElementById('return').innerHTML=res;
+
+    </script>
+</body>
+</html>
