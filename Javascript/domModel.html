@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aliceblue;
+    }
+    .container{
+        width: 100%;
+        height: 500px;
+        /* background-color: yellow; */
+        border: 1px solid red;
+    }
+</style>
+<body>
+    <button onclick="changeMode()">Click</button>
+    <div class="container">
+        <h1>Dom?</h1>
+        <p id="dom"></p>
+        <p id="color">hello virat pajiiii</p>
+        <p>Changing backgroung color?</p>
+        <button >Mode</button>
+    </div>
+
+    <script>
+        const text="Document object model";
+        document.getElementById("dom").innerHTML=text;
+        document.getElementById('color').style.color='red';
+
+        function changeMode(){
+            document.body.style.backgroundColor="red";
+        }
+    </script>
+
+</body>
+</html>
