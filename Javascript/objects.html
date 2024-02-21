@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in js</title>
+</head>
+<body>
+    <h1>Displaying all details</h1>
+    <p id="details"></p>
+
+    <script>
+        const person={
+            name:'beeraiah',
+            lastName:'bmk',
+            favCricketer:'virat',
+            // cars:[
+            //     {name:'bmw',model:['bmwb1','bmwb2','bmwb3','bmwb3']},
+            //     {name:'lamborgini',model:['lambog1','lambog2','lambog3']}
+            // ]
+        }
+        //Adding
+        // person.fullName=function(){
+        //     return this.name+" "+this.lastName;
+        // }
+        let x="";
+        for(let i in person){
+            x+="<p>"+person[i]+"</p>"+"<br>"
+        }
+        console.log("----");
+        document.getElementById('details').innerHTML=x;
+        console.log("----");
+        //Use JSON.stringify(string);
+    </script>
+</body>
+</html>
